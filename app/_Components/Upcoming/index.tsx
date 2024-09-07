@@ -1,5 +1,4 @@
 import React from "react";
-import { ItemType } from "../types";
 import Product from "@/components/Product";
 import { UpcomingItems } from "@/utils/Statics/Upcoming";
 

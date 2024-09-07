@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import Upcoming from "./components/Upcoming";
+import Header from "./_Components/Header";
+import Upcoming from "./_Components/Upcoming";
 
 export default function Home() {
   return (
