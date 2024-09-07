@@ -1,6 +1,7 @@
 import React from "react";
 import { ItemType } from "../types";
 import Product from "@/components/Product";
+import Link from "next/link";
 
 /**
  * Renders a list of items that have offer
@@ -47,9 +48,9 @@ export default function Offers(): JSX.Element {
   ];
   return (
     <section className="flex max-sm:w-screen items-center gap-4 snap-proximity snap-x w-full overflow-x-scroll bg-cyan-200 dark:bg-cyan-950 p-8 sm:rounded-xl">
-      <a href="#" className="text-2xl sm:text-4xl font-bold min-w-48">
+      <Link href="#" className="text-2xl sm:text-4xl font-bold min-w-48">
         فروش ویژه
-      </a>
+      </Link>
 
       {offers.map((offer, index) => (
         <Product

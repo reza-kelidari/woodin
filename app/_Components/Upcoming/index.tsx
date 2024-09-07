@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "@/components/Product";
 import { ItemType } from "../types";
+import Link from "next/link";
 
 /**
  * Renders a list of upcoming products in Home page, Using
@@ -119,12 +120,12 @@ export default function Upcoming(): JSX.Element {
             offPrice={item.offPrice}
           />
         ))}
-        <a
+        <Link
           href="#"
           className="grid place-content-center bg-zinc-200 dark:bg-zinc-800 rounded-xl min-h-24 hover:bg-zinc-400 dark:hover:bg-zinc-700 transition-all"
         >
           مشاهده بیشتر ...
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { ItemType } from "@/app/_Components/types";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Product({
@@ -11,7 +12,7 @@ export default function Product({
   offPrice,
 }: ItemType) {
   return (
-    <a
+    <Link
       href="#"
       className={
         customClassName +
@@ -46,6 +47,6 @@ export default function Product({
           {category}
         </h4>
       </div>
-    </a>
+    </Link>
   );
 }
