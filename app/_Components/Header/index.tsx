@@ -52,7 +52,7 @@ export default function Header(): JSX.Element {
           name={item.name}
           image={item.image}
           category={item.category}
-          customClassName={item.customClassName}
+          customClassName={item.customClassName + " max-sm:min-w-72"}
         />
       ))}
     </header>

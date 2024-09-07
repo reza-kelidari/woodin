@@ -7,7 +7,7 @@ import Product from "@/components/Product";
  *
  * @returns {JSX.Element}
  */
-export default function Offers() {
+export default function Offers(): JSX.Element {
   const offers: ItemType[] = [
     {
       name: "کتابخانه",
@@ -46,7 +46,7 @@ export default function Offers() {
     },
   ];
   return (
-    <section className="flex items-center gap-4 snap-proximity snap-x w-full overflow-x-scroll bg-cyan-200 dark:bg-cyan-950 p-8 rounded-xl">
+    <section className="flex max-sm:w-screen items-center gap-4 snap-proximity snap-x w-full overflow-x-scroll bg-cyan-200 dark:bg-cyan-950 p-8 sm:rounded-xl">
       <a href="#" className="text-2xl sm:text-4xl font-bold min-w-48">
         فروش ویژه
       </a>
