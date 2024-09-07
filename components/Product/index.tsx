@@ -15,7 +15,7 @@ export default function Product({
       href="#"
       className={
         customClassName +
-        " relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
+        " relative min-w-48 max-sm:snap-center rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
       }
     >
       <Image

@@ -45,7 +45,7 @@ export default function Header(): JSX.Element {
   ];
 
   return (
-    <header className="w-3/4 sm:w-4/5 md:w-full lg:w-3/4 xl:w-7/12 grid grid-cols-4 gap-4 max-sm:grid-cols-1">
+    <header className="w-screen max-sm:px-16 sm:w-4/5 md:w-full lg:w-3/4 xl:w-7/12 grid grid-cols-4 gap-4 max-sm:gap-8 max-sm:flex max-sm:overflow-x-scroll max-sm:snap-proximity max-sm:snap-x">
       {HeaderItems.map((item, index) => (
         <Product
           key={index}

@@ -2,6 +2,11 @@ import React from "react";
 import { ItemType } from "../types";
 import Product from "@/components/Product";
 
+/**
+ * Renders a list of items that have offer
+ *
+ * @returns {JSX.Element}
+ */
 export default function Offers() {
   const offers: ItemType[] = [
     {
@@ -54,7 +59,7 @@ export default function Offers() {
           key={index}
           price={offer.price}
           offPrice={offer.offPrice}
-          customClassName="min-w-48 snap-center"
+          customClassName="min-w-48"
         />
       ))}
     </section>
