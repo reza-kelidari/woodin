@@ -1,4 +1,4 @@
-import { ItemType } from "@/utils/Statics/types";
+import { ItemType } from "@/app/_Components/types";
 import Image from "next/image";
 import React from "react";
 
