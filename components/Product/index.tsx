@@ -1,4 +1,4 @@
-import { ItemType } from "@/app/components/types";
+import { ItemType } from "@/utils/Statics/types";
 import Image from "next/image";
 import React from "react";
 
@@ -33,7 +33,9 @@ export default function Product({
               : "bg-white dark:bg-zinc-900"
           } flex flex-col gap-2 absolute left-2 top-2   py-1 px-2 text-sm rounded-lg group-hover:opacity-50 transition-all opacity-75`}
         >
-          <span className={offPrice ? "line-through" : ""}>{price.toLocaleString("fa-ir")} تومان</span>
+          <span className={offPrice ? "line-through" : ""}>
+            {price.toLocaleString("fa-ir")} تومان
+          </span>
           {offPrice && <span>{offPrice.toLocaleString("fa-ir")} تومان</span>}
         </div>
       )}

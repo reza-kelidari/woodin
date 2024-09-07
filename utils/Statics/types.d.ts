@@ -9,37 +9,43 @@
 export interface ItemType {
   /**
    * Name of the product
+   *
+   * Example: `میز`
    */
   name: string;
 
   /**
    * Path of the product's image
+   *
+   * Example: `/desk.webp|jpg|png`
    */
   image: string;
 
   /**
    * Price of the product
    *
-   * Optional
+   * Optional, Example: `3000000`
    */
   price?: number;
 
   /**
    * Category of the product
+   *
+   * Example: `ویلا`
    */
   category: string;
 
   /**
    * Price of the product after off
    *
-   * Optional
+   * Optional, Example: `2500000`
    */
   offPrice?: number;
 
   /**
    * Custom class name
    *
-   * Optional
+   * Optional, Example: `order-first`
    */
   className?: string;
 }

@@ -2,7 +2,19 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function Hamburger() {
+/**
+ * Renders a Hamburger menu for Navigation bar, only in
+ * small screens (smaller than 640px).
+ * 
+ * This component is a client component, because it's
+ * dynamic for changing state of hamburger menu
+ *
+ * @returns {JSX.Element}
+ */
+export default function Hamburger(): JSX.Element {
+  /**
+   * Declares show menu being shown or not
+   */
   const [opened, setOpened] = useState<boolean>(false);
 
   return (

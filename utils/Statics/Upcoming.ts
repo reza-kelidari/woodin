@@ -1,5 +1,8 @@
-import { ItemType } from "@/app/components/types";
+import { ItemType } from "./types";
 
+/**
+ * List of upcoming section's items
+ */
 export const UpcomingItems: ItemType[] = [
   {
     name: "فایل اداری",

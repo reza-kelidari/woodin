@@ -1,5 +1,10 @@
-import { ItemType } from "@/app/components/types";
+import { ItemType } from "./types";
 
+/**
+ * List of Header section's items
+ * 
+ * Usually 5 item
+ */
 export const HeaderItems: ItemType[] = [
   {
     name: "صندلی های انتظار",
