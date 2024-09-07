@@ -29,7 +29,7 @@ export default function Product({
         <div
           className={`${
             offPrice
-              ? "bg-white dark:bg-green-800"
+              ? "bg-green-800 text-white"
               : "bg-white dark:bg-zinc-900"
           } flex flex-col gap-2 absolute left-2 top-2   py-1 px-2 text-sm rounded-lg group-hover:opacity-50 transition-all opacity-75`}
         >

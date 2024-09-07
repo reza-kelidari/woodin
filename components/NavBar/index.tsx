@@ -3,12 +3,12 @@ import Hamburger from "./Hamburger";
 
 /**
  * Renders a Navigation bar for all pages
- * 
+ *
  * @returns {JSX.Element}
  */
 export default function NavBar(): JSX.Element {
   return (
-    <nav className="flex items-center justify-between shadow-lg shadow-slate-100 dark:bg-zinc-900 dark:shadow-zinc-900 py-4 px-8 sm:px-16 lg:px-48 fixed w-full z-50">
+    <nav className="flex items-center justify-between shadow-lg shadow-slate-100 bg-zinc-100 dark:bg-zinc-900 dark:shadow-zinc-900 py-4 px-8 sm:px-16 lg:px-48 fixed w-full z-50">
       <a href="/" className="text-2xl">
         وودین
       </a>

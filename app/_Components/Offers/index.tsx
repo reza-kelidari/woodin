@@ -59,7 +59,7 @@ export default function Offers(): JSX.Element {
           key={index}
           price={offer.price}
           offPrice={offer.offPrice}
-          customClassName="min-w-48"
+          customClassName="w-48 sm:w-72"
         />
       ))}
     </section>
