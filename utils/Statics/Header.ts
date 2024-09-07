@@ -2,7 +2,7 @@ import { ItemType } from "./types";
 
 /**
  * List of Header section's items
- * 
+ *
  * Usually 5 item
  */
 export const HeaderItems: ItemType[] = [
@@ -15,7 +15,7 @@ export const HeaderItems: ItemType[] = [
     name: "کتابخانه ها",
     category: "دکوراسیون خانگی",
     image: "book-shelf-1.webp",
-    className: "sm:col-start-2 sm:col-end-4 max-sm:order-first",
+    customClassName: "sm:col-start-2 sm:col-end-4 max-sm:order-first",
   },
   {
     name: "میز های کامپیوتر",
@@ -26,12 +26,12 @@ export const HeaderItems: ItemType[] = [
     name: "مبلمان",
     category: "دکوراسیون خانگی",
     image: "furniture-1.webp",
-    className: "sm:col-span-2",
+    customClassName: "sm:col-span-2",
   },
   {
     name: "میز های جلو مبلی",
     image: "mini-table-1.webp",
     category: "دکوراسیون خانگی",
-    className: "sm:col-span-2",
+    customClassName: "sm:col-span-2",
   },
 ];

@@ -16,7 +16,7 @@ export default function Header(): JSX.Element {
           name={item.name}
           image={item.image}
           category={item.category}
-          className={item.className}
+          customClassName={item.customClassName}
         />
       ))}
     </header>

@@ -47,5 +47,5 @@ export interface ItemType {
    *
    * Optional, Example: `order-first`
    */
-  className?: string;
+  customClassName?: string;
 }

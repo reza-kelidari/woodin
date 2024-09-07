@@ -6,7 +6,7 @@ export default function Product({
   name,
   image,
   category,
-  className,
+  customClassName,
   price,
   offPrice,
 }: ItemType) {
@@ -14,7 +14,7 @@ export default function Product({
     <a
       href="#"
       className={
-        className +
+        customClassName +
         " relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
       }
     >
