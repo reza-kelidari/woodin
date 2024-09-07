@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { ItemType } from "../types";
 import Product from "@/components/Product";
