@@ -1,99 +1,51 @@
 import Image from "next/image";
 import React from "react";
+import { ItemType } from "../types";
+import Product from "@/components/Product";
 
 export default function Header() {
+  const items: ItemType[] = [
+    {
+      name: "صندلی های انتظار",
+      category: "دکوراسیون اداری",
+      image: "/paf-1.webp",
+    },
+    {
+      name: "کتابخانه ها",
+      category: "دکوراسیون خانگی",
+      image: "/book-shelf-1.webp",
+      className: "sm:col-start-2 sm:col-end-4 max-sm:order-first",
+    },
+    {
+      name: "میز های کامپیوتر",
+      category: "دکوراسیون اداری",
+      image: "/pc-desk-1.webp",
+    },
+    {
+      name: "مبلمان",
+      category: "دکوراسیون خانگی",
+      image: "/furniture-1.webp",
+      className: "sm:col-span-2",
+    },
+    {
+      name: "میز های جلو مبلی",
+      image: "/mini-table-1.webp",
+      category: "دکوراسیون خانگی",
+      className: "sm:col-span-2",
+    },
+  ];
+
   return (
     <header className="w-full lg:w-3/4 2xl:w-7/12 grid grid-cols-4 gap-4 max-sm:grid-cols-1">
-      <a
-        href="#"
-        className="relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
-      >
-        <Image
-          src="/paf-1.webp"
-          alt="Paf"
-          height={250}
-          width={500}
-          className="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-all group"
+      {items.map((item, index) => (
+        <Product
+          key={index}
+          name={item.name}
+          image={item.image}
+          category={item.category}
+          className={item.className}
         />
-        <div className="absolute right-2 bottom-2 bg-white dark:bg-zinc-900 py-2 px-4 rounded-lg group-hover:opacity-50 transition-all opacity-75">
-          <h3 className="text-lg text-black dark:text-white">صندلی انتظار</h3>
-          <h4 className="text-md opacity-50 text-black dark:text-white">
-            دکوراسیون اداری
-          </h4>
-        </div>
-      </a>
-      <a
-        href="#"
-        className="sm:col-start-2 sm:col-end-4 relative rounded-xl overflow-hidden order-first sm:order-none sm:hover:shadow-lg transition-all group"
-      >
-        <Image
-          src="/book-shelf-1.webp"
-          alt="Furniture"
-          height={250}
-          width={500}
-          className="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-all group"
-        />
-        <div className="absolute right-2 bottom-2 bg-white dark:bg-zinc-900 py-2 px-4 rounded-lg group-hover:opacity-50 transition-all opacity-75">
-          <h3 className="text-lg text-black dark:text-white">کتابخانه</h3>
-          <h4 className="text-md opacity-50 text-black dark:text-white">
-            دکوراسیون خانگی
-          </h4>
-        </div>
-      </a>
-      <a
-        href="#"
-        className="relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
-      >
-        <Image
-          src="/pc-desk-1.webp"
-          alt="PC Desk"
-          height={250}
-          width={500}
-          className="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-all group"
-        />
-        <div className="absolute right-2 bottom-2 bg-white dark:bg-zinc-900 py-2 px-4 rounded-lg group-hover:opacity-50 transition-all opacity-75">
-          <h3 className="text-lg text-black dark:text-white">میز کامپیوتر</h3>
-          <h4 className="text-md opacity-50 text-black dark:text-white">
-            دکوراسیون اداری
-          </h4>
-        </div>
-      </a>
-      <a
-        href="#"
-        className="sm:col-span-2 relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
-      >
-        <Image
-          src="/furniture-1.webp"
-          alt="Furniture"
-          height={250}
-          width={500}
-          className="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-all group"
-        />
-        <div className="absolute right-2 bottom-2 bg-white dark:bg-zinc-900 py-2 px-4 rounded-lg group-hover:opacity-50 transition-all opacity-75">
-          <h3 className="text-lg text-black dark:text-white">مبلمان 8 نفره</h3>
-          <h4 className="text-md opacity-50 text-black dark:text-white">
-            دکوراسیون خانگی
-          </h4>
-        </div>
-      </a>
-      <a
-        href="#"
-        className="sm:col-span-2 relative rounded-xl overflow-hidden sm:hover:shadow-lg transition-all group"
-      >
-        <Image
-          src="/mini-table-1.webp"
-          alt="Furniture"
-          height={250}
-          width={500}
-          className="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-all group"
-        />
-        <div className="absolute right-2 bottom-2 bg-white dark:bg-zinc-900 py-2 px-4 rounded-lg group-hover:opacity-50 transition-all opacity-75">
-          <h3 className="text-lg text-black dark:text-white">میز جلو مبلی</h3>
-          <h4 className="text-md opacity-50 text-black dark:text-white">
-            دکوراسیون خانگی
-          </h4>
-        </div>
-      </a>
+      ))}
     </header>
   );
 }
