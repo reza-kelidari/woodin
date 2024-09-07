@@ -100,6 +100,7 @@ export default function Upcoming(): JSX.Element {
       image: "pool-bed-3.webp",
       category: "ویلا",
       price: 3000000,
+      offPrice: 2700000,
     },
   ];
 

@@ -1,5 +1,6 @@
 import Header from "./_Components/Header";
 import Upcoming from "./_Components/Upcoming";
+import Offers from "./_Components/Offers";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       </section>
 
       <Upcoming />
+
+      <Offers />
     </main>
   );
 }
